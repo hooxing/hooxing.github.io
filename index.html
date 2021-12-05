@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     
-    <title>半岛铁盒</title>
+    <title>HooXin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     
 
+    
+        <meta property="algolia:search" data-application-id="UMOI2XI75X" data-api-key="dfbda0497a3ddb060389b0ca03b1f36f" data-index-name="index">
     
 
     
@@ -21,6 +23,8 @@
 
     
 
+    
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.3/dist/disqusjs.css">
     
 
     
@@ -37,9 +41,21 @@
             
             
             
+            disqusjs: {
+              enable: true,
+              shortname: "HooXin",
+              siteName: "Hooxin",
+              api: "https://disqus.skk.moe/disqus/",
+              apikey: "gdtvYDX4srlcNRezVVObJGwJFkeFGRbT50K5G13CNmokhlqwm5n0rp4GM3zHrwVa",
+              nesting: "4",
+              nocomment: "就等你留言啦",
+              admin: "",
+              adminLabel: "",
+            },
+            
         }
         window.aomori_logo_typed_animated = true
-        window.aomori_search_algolia = false
+        window.aomori_search_algolia = true
 
     </script>
 
@@ -58,7 +74,7 @@
             <div class="header-type-inner">
                 
                     <div id="typed-strings" style="display:none">
-                        <p>半岛铁盒</p>
+                        <p>HooXin</p>
                     </div>
                     <a class="header-type-title" id="typed" href="/"></a>
                 
@@ -184,8 +200,18 @@ class="article article-type-post"
             </section>
 
             
-            <aside class="sidebar ">
+            <aside class="sidebar sidebar-search-fix">
                 
+
+    <div class="search">
+    <div class="has-icon-right">
+        <input type="text" class="form-input" id="search" placeholder="SEARCH" autocomplete="off">
+        <div class="form-icon">
+            <box-icon name='search' color="#3c4859"></box-icon>
+        </div>
+    </div>
+    <div class="search-result" id="search-ps"></div>
+</div>
 
 
 <div class="widget" id="widget">
@@ -238,7 +264,7 @@ class="article article-type-post"
 
     <div class="footer-wrap">
         <div class="footer-inner"> 
-            半岛铁盒 &copy; 2021<br>
+            HooXin &copy; 2021<br>
             Powered By Hexo · Theme By <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a>
         </div>
     </div>
@@ -247,6 +273,8 @@ class="article article-type-post"
 
 
 
+
+<script src="https://unpkg.com/disqusjs@1.3/dist/disqus.js"></script>
 
 
 
